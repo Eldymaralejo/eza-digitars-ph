@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EZA Digitars - Digital Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>EZA Digitars</h1>
+    <p>Your source for premium digital eBooks, Art, and Photos</p>
+  </header>
+
+  <section class="hero">
+    <h2>Explore Exclusive Digital Creations</h2>
+    <button onclick="scrollToProducts()">Browse Store</button>
+  </section>
+
+  <section id="productList" class="products">
+    <!-- Products will appear here -->
+  </section>
+
+  <section id="adminLogin">
+    <h3>Admin Login</h3>
+    <input type="password" id="adminPass" placeholder="Enter admin password" />
+    <button onclick="unlockAdmin()">Login</button>
+  </section>
+
+  <section id="adminPanel">
+    <h3>Add New Product</h3>
+    <input type="text" id="prodTitle" placeholder="Product Title" />
+    <textarea id="prodDesc" placeholder="Product Description"></textarea>
+    <input type="text" id="prodImage" placeholder="Image URL" />
+    <button onclick="addProduct()">Add Product</button>
+  </section>
+
+  <footer>
+    <p>© 2025 EZA Digitars | 
+      <a href="https://facebook.com/EZADigitars" target="_blank">Facebook Page</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
